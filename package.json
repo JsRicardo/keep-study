@@ -1,0 +1,16 @@
+{
+  "name": "keep-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "nodemon javascript/promise.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}

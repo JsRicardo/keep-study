@@ -90,4 +90,13 @@ app.post("/submit", (req, res) => {
     return res.status(403).send("Invalid Referer");
   }
 });
+
+// 双重验证示例
+app.post("/sensitive-action", (req, res) => {
+  const password = req.body.password;
+  if (password !== req.session.userPassword) {
+    return res.status(403).send("Invalid Password");
+  }
+  // 执行敏感操作
+});
 ```
